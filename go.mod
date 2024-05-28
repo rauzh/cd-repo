@@ -87,7 +87,7 @@ require (
 	github.com/avito-tech/go-transaction-manager/trm/v2 v2.0.0-rc8
 	github.com/jackc/pgx/v5 v5.6.0
 	github.com/jmoiron/sqlx v1.3.5
-	github.com/rauzh/cd-core v0.0.0-20240526182126-06ccbfbbe6b4
+	github.com/rauzh/cd-core v0.0.0-20240528143414-753304dedd38
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.31.0
 	go.uber.org/atomic v1.7.0 // indirect
