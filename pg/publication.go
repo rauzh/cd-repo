@@ -118,7 +118,7 @@ func (pub *PublicationPgRepo) GetAllByManager(ctx context.Context, mng uint64) (
 func (pub *PublicationPgRepo) GetAllByArtistSinceDate(ctx context.Context, date time.Time, artistID uint64) ([]models.Publication, error) {
 
 	q := "SELECT p.publication_id, p.creation_date, p.manager_id, p.release_id " +
-		"FROM publications p JOIN releases r ON p.release_id = r.release_id" +
+		"FROM publications p JOIN releases r ON p.release_id = r.release_id " +
 		"WHERE r.artist_id=$1 AND p.creation_date>=$2;"
 
 	publications := make([]models.Publication, 0)
